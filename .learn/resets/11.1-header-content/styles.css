@@ -1,0 +1,36 @@
+body {
+	background: black;
+}
+
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+
+.postcard {
+	width: 300px; /* Ajusta el ancho según lo necesites */
+	height: 400px; /* Ajusta la altura */
+	background-color: #f9f9f9; /* Color de fondo */
+	border: 1px solid #ccc; /* Borde */
+	border-radius: 10px; /* Esquinas redondeadas */
+	overflow: hidden; /* Para que el contenido no se desborde */
+    
+}
+
+.postcard-header {
+	background-color: #4caf50; /* Color de fondo */
+	color: white; /* Color del texto */
+	padding: 10px; /* Espaciado interno */
+	text-align: center; /* Centrar el texto */
+}
+
+.postcard-body {
+	padding: 20px; /* Espaciado interno */
+	text-align: left; /* Alinear texto a la izquierda */
+}
+
+.postcard-footer {
+	background-color: #eee; /* Color de fondo */
+	padding: 10px; /* Espaciado interno */
+	text-align: right; /* Alinear texto a la derecha */
+}
