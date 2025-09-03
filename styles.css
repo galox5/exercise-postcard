@@ -2,38 +2,28 @@ body {
 	background: black;
 }
 
-* {
-	border: 1px dashed rgb(243, 239, 239) (243, 239, 239);
-	min-height: 10px;
-}
-
 .postcard {
-	width: 300px; /* Ajusta el ancho según lo necesites */
-	height: 400px; /* Ajusta la altura */
-	background-color: #f9f9f9; /* Color de fondo */
-	border: 1px solid #ccc; /* Borde */
-	border-radius: 10px; /* Esquinas redondeadas */
-	overflow: hidden; /* Para que el contenido no se desborde */
+	width: 350px; /* Aumenté el ancho para más espacio */
+	height: 450px;
+	background-color: #bed4ec;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .postcard-header {
-	background-color: #4caf50; /* Color de fondo */
-	color: white; /* Color del texto */
-	padding: 10px; /* Espaciado interno */
-	text-align: center; /* Centrar el texto */
-	display: x;
-}
-
-.postcard-body {
-	padding: 20px; /* Espaciado interno */
-	text-align: left; /* Alinear texto a la izquierda */
+	background-color: #92a8d1;
+	color: black;
+	padding: 10px;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.postcard-footer {
-	background-color: #eee; /* Color de fondo */
-	padding: 10px; /* Espaciado interno */
-	text-align: center; /* Alinear texto a la derecha */
+.postcard-header h1 {
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Arial', sans-serif;
 }
 
 .postcard-header img {
@@ -41,27 +31,76 @@ body {
 	height: 50px;
 }
 
-.postcard-header h1 {
-	width: 150px;
-	margin: none;
+.postcard-body {
+	display: flex;
+	height: calc(100% - 120px);
+}
+
+.body-left {
+	flex: 1;
+	padding: 15px;
+	font-size: 12px;
+	line-height: 1.4;
+	margin: 0;
+	font-family: 'Verdana', sans-serif;
+	color: #333;
+}
+
+.body-left p {
+	margin: 0 0 5px 0;
 }
 
 .body-left p:first-child {
-	margin-top: 0;
+	color: #e74c3c;
 }
 
-.body-left,
+.body-left p:last-child {
+	color: #2ecc71;
+}
+
 .body-right {
-	padding: 20px;
+	flex: 1;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-input {
+.body-right p {
+	margin: 5px 0;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	font-family: 'Arial', sans-serif;
+	color: #444;
+}
+
+.body-right input {
+	margin-left: 5px;
+	flex: 1;
 	border: none;
-	border-bottom: grey;
-	font-size: medium;
+	border-bottom: 1px solid #555;
+	font-size: 12px;
+	background: transparent;
+}
+
+.postcard-footer {
+	background-color: #bed4ec;
+	padding: 10px;
+	text-align: center;
 }
 
 button {
-	background-color: dimgrey;
-	padding: 10px;
+	background-color: #cccccc;
+	color: black;
+	border: none;
+	padding: 5px 15px;
+	font-size: 12px;
+	cursor: pointer;
+	font-family: 'Arial', sans-serif;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #bbbbbb;
 }
